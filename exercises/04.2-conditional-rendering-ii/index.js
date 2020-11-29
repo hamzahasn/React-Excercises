@@ -2,11 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 
+
+
 // add the green inside this function
 const Alert = props => {
 	const colorClasses = {
 		red: "alert-danger",
-		orange: "alert-warning"
+        orange: "alert-warning",
+        green: "alert-success"
 	};
 	if (colorClasses[props.color] === undefined) alert(`The color ${props.color} is not in the possible list of colors`);
 
